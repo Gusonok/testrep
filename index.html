@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusonok | Frontend Developer</title> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="resume.js" defer></script>
+</head>
+<body class=".dark-mode.">
+    <div class="container">  
+        <header class="intro">
+            <img src="кооот.jfif" alt="кот" class="avatar" >
+            
+            <div class="intro-text">
+                <h1>My name is Gus!</h1>
+                <p class="intro-subtitle"><em>19 years old & I like to play Minecraft</em></p>
+            </div>
+        </header>   
+        <main>
+            <section class="card bg-red">
+                <h2>Опыт какой-то...</h2>
+                <table class="experience-table">
+                    <tr>
+                        <th>Fronend</th>
+                        <th>Backend</th>
+                        <th>Python</th>
+                    </tr>
+                    <tr>
+                        <td>Пару месяцев</td>
+                        <td>Только ИИ</td>
+                        <td>48 баллов по ЕГЭ</td>
+                    </tr>
+                    <tr>
+                        <td>Html css javascript</td>
+                        <td>django docker</td>
+                        <td>VScode OneLove</td>
+                    </tr>
+                    <tr>
+                        <td>Курсы</td>
+                        <td>ИИ</td>
+                        <td>Книги</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="card hobbies bg-yellow"> 
+                <h2>Хобби: </h2>
+                <ul type="1" class="list" id="hobbies-list">
+                    <!-- <li>Спорт</li>
+                    <li>Игры</li>
+                    <li>Качалка</li> теперь сюда все ставит JS!-->
+                </ul>
+
+                <div class="add-hobby-form">
+                    <input type="text" id="hobby-input" class="form-control" placeholder="Новое хобби">
+                    <button id="add-hobby-btn" class="btn btn-outline-info">Добавить</button>
+                </div>
+                
+            </section>
+
+            <section class="card bg-green">
+                <h2>Связаться со мной</h2> 
+                <form action="/" id = "contact-form">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Введите ваше имя...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Ваш email</label>
+                            <input type="email" id="email" placeholder="Введите ваш email...">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="text">Ваше сообщение</label>
+                        <textarea name="text" id="text" placeholder="Введите ваше сообщение..." rows="1"></textarea>
+                    </div>
+                    
+                    <input class = "btn" type="submit" value="Отправить"> 
+                </form>
+            </section>
+        
+        </main>
+
+        <footer class="footer">
+            <h4>Мои соцсети:</h4>
+            <a href="#" target="_blank">VK</a>
+            <a href="https://web.telegram.org/k/#@Gusonok643" target="_blank">Telegram</a>
+            <a href="#" target="_blank">What's Up</a>
+        </footer>
+
+        <div class="position">
+            <div class="cat-group">
+                <div class="gallery-item">
+                    <img src="images (1).jfif" alt="кот1" class="gallery-img">
+                    <div class="gallery-caption">
+                        <p>Трехцветная кошка. Очень умная и независимая.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images (2).jfif" alt="кот2" class="gallery-img">
+                    <div class="gallery-caption">
+                        <p>Серый милый котенок. Очень ласковый и добрый.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images.jfif" alt="кот0" class="gallery-img">
+                    <div class="gallery-caption">
+                        <p>Шотландский вислоухий. Спокойный и домашний.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="box">
+                <button id="theme-toggle-button">Сменить тему</button>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 500px;"> </div>
+    </div> 
+</body>
+</html>
