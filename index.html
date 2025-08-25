@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="styles.css">
     <script src="resume.js" defer></script>
 </head>
-<body class=".dark-mode.">
+<body>
     <div class="container">  
         <header class="intro">
-            <img src="кооот.jfif" alt="кот" class="avatar" >
-            
+
+            <div class="intro-avatar">
+                <img src="кооот.jfif" alt="кот" class="avatar" >
+            </div>
+
             <div class="intro-text">
                 <h1>My name is Gus!</h1>
                 <p class="intro-subtitle"><em>19 years old & I like to play Minecraft</em></p>
             </div>
-        </header>   
+
+            <div id="weather" class="weather-widget">
+                
+                <button id="theme-toggle-button">Сменить тему</button>
+
+                <div id="weather-header" class="weather-header">
+                    <img id="weather-icon" src="" alt="Иконка погоды">
+                    <span id="weather-temp" class="weather-temp">--°C</span>
+                </div>
+                <div id="weather-city" class="weather-city">Загрузка...</div>
+            </div>
+            
+        </header>
         <main>
             <section class="card bg-red">
                 <h2>Опыт какой-то...</h2>
@@ -116,10 +131,15 @@
                 </div>
 
             </div>
-            <div class="box">
-                <button id="theme-toggle-button">Сменить тему</button>
-            </div>
-        </div>
+            
+
+        </div>  
+
+        <section class="cat-facts card bg-red">
+            <h2>Случайный факт о кошках!</h2>
+            <p id="cat-fact-text">Нажми на кнопку, чтобы получить интересный факт!</p>
+            <button id="cat-fact-btn" class="btn">Получить факт!</button>
+        </section>
 
         <div style="margin-bottom: 500px;"> </div>
     </div> 
